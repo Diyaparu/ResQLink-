@@ -1,0 +1,123 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url("C:\Users\aavan\OneDrive\Desktop\ResQlink\IMG-20250323-WA0008.jpg");
+    background-size: cover;
+    position: relative; /* Required to ensure stacking works properly */
+}
+
+body::before {
+    content: "";
+    position: fixed; /* Ensures it covers the entire screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    opacity: 0.5; /* ONLY the background is transparent */
+    z-index: -1; /* Keeps it behind all content */
+}
+
+h1, h2 {
+    
+    color: #dc3545;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Emergency Buttons Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 Columns */
+    gap: 15px;
+    margin-top: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 220px; /* Adjust button size */
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design (For smaller screens) */
+@media (max-width: 768px) {
+    .buttons {
+        grid-template-columns: repeat(2, 1fr); /* 2 Columns for Tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .buttons {
+        grid-template-columns: repeat(1, 1fr); /* 1 Column for Mobile */
+    }
+}
+
+/* Color categories for different emergencies */
+.police { background-color: #007bff; }
+.fire { background-color: #ff5733; }
+.ambulance, .medical { background-color: #28a745; }
+.women, .child { background-color: #ff69b4; }
+.transport, .utility { background-color: #ffc107; }
+.cyber { background-color: #6f42c1; }
+.disaster { background-color: #17a2b8; }
+
+/* Chatbot section */
+.chatbot {
+    margin-top: 30px}
+.mesg {
+    width: 100%;
+    height: 80px;
+    font-size: 18px;
+    padding: 10px;
+    border: 2px;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    outline: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.mesg::placeholder {
+    color: rgba(255, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+.mesg:focus {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 1);
+}
+.send-btn {
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.send-btn:hover {
+    background-color: rgb(230, 14, 14);
+}

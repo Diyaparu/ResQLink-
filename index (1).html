@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Response</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🚨 ResQlink</h1>
+        <h2>📞 Emergency Helplines</h2>
+        <p>Quick access to emergency contacts & assistance</p>
+    </header>
+
+    <section class="buttons">
+       
+        <!-- General Emergency -->
+        <button class="emergency" onclick="confirmCall('112')">📞 General Emergency (112)</button>
+
+        <!-- Medical & Health -->
+        <button class="medical" onclick="confirmCall('102')">🚑 Ambulance (102)</button>
+        <button class="medical" onclick="confirmCall('108')">🏥 Medical Emergency (108)</button>
+        <button class="medical" onclick="confirmCall('104')">📞 Health Helpline (104)</button>
+
+        <!-- Police & Crime -->
+        <button class="police" onclick="confirmCall('100')">🚔 Police (100)</button>
+        <button class="women" onclick="confirmCall('1090')">👩 Women Helpline (1090)</button>
+        <button class="women" onclick="confirmCall('181')">📞 National Women Helpline (181)</button>
+
+        <!-- Fire & Disaster -->
+        <button class="fire" onclick="confirmCall('101')">🔥 Fire Brigade (101)</button>
+        <button class="disaster" onclick="confirmCall('1078')">🌪 Disaster Management (1078)</button>
+
+        <!-- Child & Women Safety -->
+        <button class="child" onclick="confirmCall('1098')">👶 Child Helpline (1098)</button>
+        <button class="child" onclick="confirmCall('1071')">🚆 Railway Child Helpline (1071)</button>
+
+        <!-- Road & Transport -->
+        <button class="transport" onclick="confirmCall('1033')">🚗 National Highway Helpline (1033)</button>
+        <button class="transport" onclick="confirmCall('1073')">🚨 Road Accident Helpline (1073)</button>
+
+        <!-- Utility & Cyber Crime -->
+        <button class="utility" onclick="confirmCall('1912')">⚡ Electricity Helpline (1912)</button>
+        <button class="cyber" onclick="confirmCall('155260')">🖥 Cyber Crime Helpline (155260)</button>
+        <button class="disaster" onclick="confirmCall('1070')">🌎 Natural Disaster Helpline (1070)</button>
+    </section>
+
+    <section class="chatbot">
+        <a href="chatbot.html">🤖 AI ChatBot</a>
+        <div id="chat-box">
+            <p class="bot">Hello! How can I assist you?</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
